@@ -118,11 +118,11 @@ def main(url, output):
         items_list.append(item_or_gem)
 
     #### Check each url to see if it is valid ####
-    # print("Checking urls...")
-    # for item in items_list:
-    #     r = requests.get(item["url"])
-    #     if r.status_code != 200:
-    #         print("Invalid url: " + item["url"])
+    print("Checking urls...")
+    for item in items_list:
+        r = requests.get(item["url"])
+        if r.status_code != 200:
+            print("Invalid url: " + item["url"])
 
     #### Generate bookmark  dict ####
     # load cached tags from json file
